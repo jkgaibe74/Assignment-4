@@ -1,0 +1,28 @@
+    # What is the probability of:
+   #         A1. Event A?
+    #        A2  EVENT B?
+     #       A3. Event A or B? 
+      #      A4. P(A or B) or  = P(A) + P(B)? 
+#A1: # P(A) = 10 + 20 = 30 = 0.5
+#A2: # P(B) = 10 + 20 = 30 = 0.5
+#A3: # P(A or B) =  = P(A) + P(B) =  30 + 30 = 60
+#A4: # P(A or B) = P(A)+ P(B) - P(A and B) = 30 + 30 - 10 = 50
+  
+              
+ # B. Applying Bayes Theorem
+   B1: True
+ B2: It is true because in terms of conditional probability, 5 days out of 365 daysor P(A1) so theres already
+ a good chance that it will not rain. And when it does rain the weather man is right 90% of the time = P(A2)= 360/365 despite when it does rain the weatherman predicts rain 10% P(B|A2) of the time.                                        
+         Thus, By using Bayes theorem we can predict that there is an 11% P(A1|B) chance that it will rain in Jane's wedding.
+  
+  
+# C. For a disease known to have a postoperative complication frequency of 20%, a surgeon suggests a new procedure. She/he tests it on 10 patients and found there are not complications.
+
+# C1: What is the probability of operating on 10 patients successfully with the traditional method?
+ # A hint, use dbinom function - it is part of R functions that count Density, distribution function, quantile function, and random generation for the binomial distribution with parameters size and prob.          
+            
+            dbinom(0, size=10, prob=.2)
+ 
+  # Result =  
+            dbinom(0, size=10, prob=.2)
+            [1] 0.1073742 
